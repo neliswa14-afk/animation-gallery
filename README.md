@@ -39,6 +39,7 @@ Check it out here: [Live Demo](https://neliswa14-afk.github.io/animation-gallery
 ### Register Page
 
 [Register Page](screenshots/register-page.png)
+Click the link to view the register page
 
 
 ### Gallery Page 1
