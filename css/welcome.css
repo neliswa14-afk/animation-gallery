@@ -1,0 +1,167 @@
+/* ====================
+   RESET & BASE STYLES
+==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("../assets/images/AsianNo2.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+}
+
+/* ====================
+   WRAPPER & HERO
+==================== */
+.wrapper {
+    text-align: center;
+    padding: 60px 20px 40px;
+    width: 100%;
+}
+
+.center h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: red;
+    text-shadow: 0 0 15px #ff0000;
+    transition: all 0.3s ease;
+}
+
+.center h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #ff4d4d;
+}
+
+/* ====================
+   BUTTONS
+==================== */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: darkred;
+    box-shadow: 0 0 30px red;
+    transform: scale(1.05);
+}
+
+/* ====================
+   GALLERY PREVIEW
+==================== */
+.gallery-preview {
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+    z-index: 1;
+}
+
+.gallery-preview h3 {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.preview-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255,0,0,0.5);
+}
+
+.preview-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ffcccc;
+}
+
+/* ====================
+   PARTICLE CANVAS
+==================== */
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* ====================
+   FOOTER
+==================== */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1;
+}
+
+/* ====================
+   PAGE FADE TRANSITION
+==================== */
+body.fade-in {
+    opacity: 0;
+}
+
+body.fade-in.show {
+    opacity: 1;
+}
+
+/* ====================
+   MOBILE RESPONSIVENESS
+==================== */
+@media (max-width: 768px) {
+    .center h1 { font-size: 2.2rem; }
+    .center h2 { font-size: 1.2rem; }
+    .btn { width: 140px; height: 45px; font-size: 14px; }
+    .preview-grid { gap: 10px; }
+}

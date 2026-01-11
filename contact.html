@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="navBar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="#" id="logoutLink">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome To Our Contact & Feedback Page</h1>
+            <p>We Appreciate All Your Feedback</p>
+        </section>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <h2>Send a Message</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" placeholder="Enter Phone Number">
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+            <small class="error"></small>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2026 Antice. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

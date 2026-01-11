@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="logoutLink">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dashboard Section -->
+        <section class="dashboard">
+            <h1>Admin Dashboard</h1>
+
+            <!-- Summary Cards -->
+            <div class="summary" id="summary">
+                <!-- Cards will be injected by JS -->
+            </div>
+
+            <!-- Messages Table -->
+            <div id="adminContent">
+                <p>Loading admin data...</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Admin JS -->
+    <script src="js/admin-dashboard.js"></script>
+</body>
+
+</html>

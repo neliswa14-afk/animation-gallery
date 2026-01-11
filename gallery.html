@@ -1,0 +1,298 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+<body>
+   <div class="wallpaper">
+    <button class="hamburger" id="hamburger"
+    aria-label="Toggle navigation">
+        &#9776;
+    </button>
+
+    <nav class="navbar" id="navBar">
+    <img class="logo" src="assets/images/logo.jpg" alt="Animation Gallery Logo">
+
+    <ul>
+        <li><a class="show" href="index.html">Home</a></li>
+
+        <!-- Login/Register buttons -->
+        <li><a href="login.html" id="loginBtn">Login</a></li>
+        <li><a href="register.html" id="registerBtn">Register</a></li>
+
+        <!-- Logout button shown only if logged in -->
+        <li><a href="#" id="logoutBtn" >Logout</a></li>
+
+        <!-- Welcome message -->
+        <li><span id="welcomeText"></span></li>
+
+        <!-- Other links -->
+        <li><a href="#">Services</a></li>
+        <li><a href="contact.html">Contact & Feedback</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">T&C</a></li>
+    </ul>
+</nav>
+
+
+    <nav class="gallery-nav" >
+       <button onclick="filterGallery('all')">All</button>
+       <button onclick="filterGallery('african')">African</button>
+       <button onclick="filterGallery('anime')">Anime</button>
+       <button onclick="filterGallery('antarctica')">Antarctica</button>
+       <button onclick="filterGallery('asian')">Asian</button>
+       <button onclick="filterGallery('australia')">Australia</button>
+       <button onclick="filterGallery('europe')">Europe</button>
+       <button onclick="filterGallery('southAmerica')">South America</button>
+    </nav>
+      
+    <section class="hero">
+      <h1>Innovate Your World</h1>
+      <p>Explore our digital gallery and see different styles of arts.</p>
+      <p>Fan Anime Arts & Different Style Art</p>
+    </section>
+
+      <main>
+        <section class="art-gallery">
+           <!--art cards-->
+           <div class="art-card asian">
+               <img src="assets/images/AsianNo1.jpg" alt="Asian Artwork 1" loading="lazy" onclick="openModal(this)">
+           </div>
+    
+           <div class="art-card asian">
+               <img src="assets/images/AsianNo2.jpg" alt="Asian Artwork 2" loading="lazy" onclick="openModal(this)">
+           </div>
+    
+           <div class="art-card asian">
+              <img src="assets/images/AsianNo3.jpg" alt="Asian Artwork 3" loading="lazy" onclick="openModal(this)">
+            </div>
+    
+            <div class="art-card asian">
+                <img src="assets/images/AsianNo4.jpg" alt="Asian Artwork 4" loading="lazy" onclick="openModal(this)">
+            </div>
+    
+            <div class="art-card asian">
+                <img src="assets/images/AsianNo5.jpg" alt="Asian Artwork 5" loading="lazy" onclick="openModal(this)">
+            </div>
+    
+            <div class="art-card asian">
+                <img src="assets/images/AsianNo6.jpg" alt="Asian Artwork 6" loading="lazy" onclick="openModal(this)">
+            
+            </div>
+    
+            <div class="art-card asian">
+               <img src="assets/images/AsianNo7.jpg" alt="Asian Artwork 7" loading="lazy" onclick="openModal(this)">
+            </div>
+    
+            <div class="art-card asian">
+                <img src="assets/images/AsianNo8.jpg" alt="Asian Artwork 8" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+            <div class="art-card anime">
+                <img src="assets/images/AnimeNo9.jpg" alt="Asian Artwork 9" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+            <div class="art-card anime">
+                <img src="assets/images/AnimeNo10.jpeg" alt="Asian Artwork 10" loading="lazy" onclick="openModal(this)">
+            </div>
+    
+            <div class="art-card anime">
+                <img src="assets/images/AnimeNo11.jpg" alt="Asian Artwork 11" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo12.jpg" alt="Asian Artwork 12" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo13.webp" alt="Asian Artwork 13" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo14.jpg" alt="Asian Artwork 14" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo15.jpg" alt="Asian Artwork 15" loading="lazy" onclick="openModal(this)"> 
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo17.jpg"alt="Asian Artwork 17" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card">
+                <img src="assets/images/AsianNo18.webp"alt="Asian Artwork 18" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo19.jpg"alt="Asian Artwork 19" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo20.jpg" alt="Asian Artwork 20" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo21.webp" alt="Asian Artwork 21" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo22.jpg" alt="Anime Artwork 22" loading="lazy" onclick="openModal(this)">
+             </div>
+             
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo24.webp" alt="Asian Artwork 24" loading="lazy" onclick="openModal(this)">
+             </div>
+             
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo27.webp" alt="Asian Artwork 27" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo28.webp" alt="Asian Artwork 28" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo29.webp" alt="Asian Artwork 29" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo30.webp" alt="Asian Artwork 30" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo32.webp" alt="Asian Artwork 32" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo33.webp" alt="African Artwork 33" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo34.webp" alt="African Artwork 34" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo35.webp" alt="African Artwork 35" loading="lazy" onclick="openModal(this)"> 
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo36.webp" alt="African Artwork 36" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo37.webp" alt="African Artwork 37" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo38.webp" alt="African Artwork 38" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo39.webp" alt="African Artwork 39" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo40.webp" alt="African Artwork 40" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card african">
+                <img src="assets/images/AfricanNo41.webp" alt="African Artwork 41" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo42.webp" alt="Asian Artwork 42" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card asian">
+                <img src="assets/images/AsianNo43.webp" alt="Asian Artwork 43" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo47.webp" alt="Anime Artwork 47" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo48.webp" alt="Anime Artwork 48" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card anime">
+                <img src="assets/images/AnimeNo49.webp" alt="Anime Artwork 49" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card europe">
+                <img src="assets/images/EuropeNo52.webp" alt="Europe Artwork 52" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card europe">
+                <img src="assets/images/EuropeNo53.webp" alt="Europe Artwork 53" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card europe">
+                <img src="assets/images/EuropeNo54.webp" alt="Europe Artwork 54" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card australia">
+                <img src="assets/images/AustraliaNo55.webp" alt="Australia Artwork 55" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card southAmerica">
+                <img src="assets/images/SouthAmericaNo56.webp" alt="SouthAmerica Artwork 56" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card southAmerica">
+             <img src="assets/images/SouthAmericaNo57.webp" alt="SouthAmerica Artwork 57" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card southAmerica">
+                <img src="assets/images/SouthAmericaNo58.webp" alt="SouthAmerica Artwork 58" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card southAmerica">
+                <img src="assets/images/SouthAmericaNo59.webp" alt="SouthAmerica Artwork 59" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card antarctica">
+                <img src="assets/images/AntarcticaNo60.webp" alt="Antarctica Artwork 60" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card antarctica">
+             <img src="assets/images/AntarcticaNo61.webp" alt="Antarctica Artwork 61" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+             <div class="art-card antarctica">
+                <img src="assets/images/AntarcticaNo62.webp" alt="Antarctica Artwork 62" loading="lazy" onclick="openModal(this)">
+             </div>
+    
+          </section>
+       </div>
+      </main>
+
+      <!--Modal-->
+      <div id="modal" class="modal" role="dialog" arial-modal="true">
+         <img id="modal-img" alt="Extended artwork">
+      </div>
+
+
+      <footer class="footer">
+         <div class="footer-container">
+             <p>&copy; 2026 Antice. All rights reserved.</p>
+         </div>
+         <div class="social-links">
+             <a href="#">Facebook</a>
+             <a href="#">Twitter</a>
+             <a href="#">LinkedIn</a>
+         </div>
+     </footer>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>

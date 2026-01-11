@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ),
+    url("background.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-box {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+    animation: slideUp 1s ease, glow 3s infinite alternate;
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: red;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth-box input:focus{
+    outline: 2px solid red;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-box button:hover {
+    background: darkred;
+    box-shadow: 0 0 15px red;
+}
+
+.switch {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.switch a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 4680px) {
+    .auth-box{
+        padding: 30px 20px;
+    }
+}
